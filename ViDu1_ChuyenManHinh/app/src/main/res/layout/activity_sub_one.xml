@@ -5,30 +5,30 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity_sub_one">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="122dp"
-        android:layout_marginEnd="140dp"
-        android:text="MÀN HÌNH TRANG CHỦ"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="177dp"
+        android:text="BẠN ĐANG Ở MÀN HÌNH THỨ HAI"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnChuyen"
+        android:id="@+id/btnQuayLai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="157dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="164dp"
-        android:text="SANG MÀN HÌNH KHÁC"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="166dp"
+        android:text="QUAY LẠI TRANG CHỦ"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
