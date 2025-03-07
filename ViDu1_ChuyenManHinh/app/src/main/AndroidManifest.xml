@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ViDu1_ChuyenManHinh"
         tools:targetApi="31">
         <activity
+            android:name=".SubActivityOne"
+            android:exported="false" />
+        <activity
             android:name=".activity_sub_one"
             android:exported="false" />
         <activity
