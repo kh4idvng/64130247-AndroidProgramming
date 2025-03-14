@@ -14,18 +14,17 @@
         android:layout_marginTop="20dp">
 
         <TextView
+            android:id="@+id/amazonName"
             android:layout_width="0dp"
             android:layout_height="42dp"
-            android:id="@+id/amazonName"
-            android:text="Amazon"
-            android:textSize="40sp"
-            android:textColor="@color/lavender"
             android:layout_marginStart="18dp"
             android:layout_marginTop="40dp"
-            android:fontFamily="@font/poppins_semibold"
-            app:layout_constraintTop_toTopOf="parent"
+            android:text="Amazon"
+            android:textColor="@color/lavender"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/amazonImage"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/amazonImage"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:layout_width="0dp"
