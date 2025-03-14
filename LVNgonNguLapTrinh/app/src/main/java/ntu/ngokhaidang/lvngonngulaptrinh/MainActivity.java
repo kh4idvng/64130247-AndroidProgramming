@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> adapterNNLT;
         adapterNNLT = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dsNgonNguLT);
         //B3. Gan adapter
+        listViewNNTL.setAdapter(adapterNNLT);
+        //B4.
         listViewNNTL.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 String giaTriDuocChon = dsNgonNguLT.get(position);
                 //
                 //
-                Toast.makeText(MainActivity.this, giaTriDuocChon,Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, giaTriDuocChon,Toast.LENGTH_SHORT).show();
             }
         });
 
