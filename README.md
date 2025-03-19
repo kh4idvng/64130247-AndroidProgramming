@@ -13,3 +13,8 @@
 ![image](https://github.com/user-attachments/assets/5ad13147-ef9b-4118-b77b-7e76ab5d4814)
 ### [Ex5_AddSubMulDiv_Var](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex5_AddSubMulDiv_Var)
 ![image](https://github.com/user-attachments/assets/24d91010-abfd-4275-b0bc-0eff37c8b48e)
+### [Ex6_IntentDonGian](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex6_IntentDonGian)
+![image](https://github.com/user-attachments/assets/3cd12abb-6f30-4ed9-8fb4-f725a4323203)![image](https://github.com/user-attachments/assets/458ca8d6-14c7-432d-a62f-c58d50bcae97)![image](https://github.com/user-attachments/assets/9d1b1a3e-7dd6-40e2-b616-563e4cc244ce)
+
+
+
