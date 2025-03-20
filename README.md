@@ -1,6 +1,9 @@
 # 64130247-AndroidProgramming
 
 ## LƯU CÁC BÀI TẬP LỚN VÀ NHỎ TRONG HỌC LẬP TRÌNH ANDROID
+
+### [CheckSoRandom](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/CheckSoRandom)
+![image](https://github.com/user-attachments/assets/4c2bf2bb-849d-4c8b-8f24-eb8dfaec2878)
 ### [Ex1_ConstrainLayout](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex1_ConstrainLayout)
 ![image](https://github.com/user-attachments/assets/6fda2381-feee-4044-8d2b-30184e3cd2f6)
 ### [Ex2_LinearLayout](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex2_LinearLayout)
