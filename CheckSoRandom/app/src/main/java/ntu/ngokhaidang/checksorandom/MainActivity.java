@@ -73,6 +73,5 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"Sai rồi! Đáp án đúng là " + kqDung,LENGTH_SHORT).show();
         }
 
-
     }
 }
