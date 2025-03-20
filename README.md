@@ -2,6 +2,8 @@
 
 ## LƯU CÁC BÀI TẬP LỚN VÀ NHỎ TRONG HỌC LẬP TRÌNH ANDROID
 
+### [KidLearningApp](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/KidLearningApp)
+![image](https://github.com/user-attachments/assets/a807d2bd-8635-46bf-a507-ba046512e472)![image](https://github.com/user-attachments/assets/7bc9ba5d-d522-4ef5-8bf8-92f0c1f380e3)
 ### [CheckSoRandom](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/CheckSoRandom)
 ![image](https://github.com/user-attachments/assets/4c2bf2bb-849d-4c8b-8f24-eb8dfaec2878)
 ### [Ex1_ConstrainLayout](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex1_ConstrainLayout)
