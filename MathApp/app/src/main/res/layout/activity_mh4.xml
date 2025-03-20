@@ -5,45 +5,45 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MH4">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView9"
         android:layout_width="410dp"
-        android:layout_height="130dp"
-        android:scaleType="fitXY"
+        android:layout_height="147dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cam" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="152dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/hellomanu" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/match" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/language"
-        tools:layout_editor_absoluteX="25dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hinh"
+        tools:layout_editor_absoluteY="291dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
