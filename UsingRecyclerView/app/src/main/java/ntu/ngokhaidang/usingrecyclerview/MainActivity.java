@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         LandScape landScape1 = new LandScape("ho", "Con Hổ");
         dsDuLieu.add(landScape1);
         dsDuLieu.add(new LandScape("pool", "Ho Boi"));
-        dsDuLieu.add(new LandScape("pool", "Ho Boi"));
         dsDuLieu.add(new LandScape("cowboy", "Cao Boi Mien Tay Nuoc My"));
         return dsDuLieu;
     }
