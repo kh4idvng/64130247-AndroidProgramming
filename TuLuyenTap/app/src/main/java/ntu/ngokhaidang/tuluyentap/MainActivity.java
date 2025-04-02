@@ -40,5 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(Activity1);
             }
         });
+        nut2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Activity2 = new Intent(MainActivity.this, activityCau2.class);
+                startActivity(Activity2);
+            }
+        });
     }
 }
