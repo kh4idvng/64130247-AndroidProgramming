@@ -1,9 +1,9 @@
 package ntu.ngokhaidang.tuluyentap;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,34 +11,45 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class activityCau1 extends AppCompatActivity {
 
-    Button nut1,nut2,nut3,nut4;
-
+    EditText editTextSoA;
+    EditText editTextSoB;
+    Button nutCong;
+    EditText editTextKQ;
     void TimDieuKhien(){
-        nut1 = findViewById(R.id.btnCau1);
-        nut2 = findViewById(R.id.btnCau2);
-        nut3 = findViewById(R.id.btnCau3);
-        nut4 = findViewById(R.id.btnCau4);
+        editTextSoA = findViewById(R.id.edtSoA);
+        editTextSoB = findViewById(R.id.edtSoB);
+        editTextKQ = findViewById(R.id.edtKQ);
+        nutCong = findViewById(R.id.btnTong);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cau1);
         TimDieuKhien();
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        nut1.setOnClickListener(new View.OnClickListener() {
+        nutCong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Activity1 = new Intent(MainActivity.this, activityCau1.class);
-                startActivity(Activity1);
+                XULY_CONG();
             }
         });
+
+    }
+    void XULY_CONG(){
+        String so1 = editTextSoA.getText().toString();
+        String so2 = editTextSoB.getText().toString();
+        float num1 = Float.parseFloat(so1);
+        float num2 = Float.parseFloat(so2);
+        float tong = num1 + num2;
+        String chuoiKQ = String.valueOf(tong);
+        editTextKQ.setText(chuoiKQ);
     }
 }
