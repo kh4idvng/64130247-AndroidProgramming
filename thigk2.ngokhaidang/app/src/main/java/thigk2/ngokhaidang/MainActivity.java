@@ -41,5 +41,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(CN2);
             }
         });
+        nut3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent CN3 = new Intent(MainActivity.this, ChucNang3.class);
+                startActivity(CN3);
+            }
+        });
     }
 }
