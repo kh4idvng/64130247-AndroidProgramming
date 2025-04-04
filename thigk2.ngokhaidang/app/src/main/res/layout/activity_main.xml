@@ -35,9 +35,10 @@
         android:layout_marginTop="2dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo50Nam" />
+        app:srcCompat="@drawable/logo50nam" />
 
     <Button
         android:id="@+id/btnCN2"
