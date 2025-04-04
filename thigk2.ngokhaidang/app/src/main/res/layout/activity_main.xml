@@ -8,22 +8,22 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="432dp"
-        android:text="Chức năng 1"
+        android:id="@+id/btnAM"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="472dp"
+        android:text="About Me"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="432dp"
-        android:text="Chức năng 1"
+        android:id="@+id/btnCN4"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="472dp"
+        android:text="Chức năng 4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,22 +40,22 @@
         app:srcCompat="@drawable/logo50Nam" />
 
     <Button
-        android:id="@+id/btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="340dp"
-        android:text="Chức năng 1"
+        android:id="@+id/btnCN2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="388dp"
+        android:text="Chức năng 2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="340dp"
-        android:text="Chức năng 2"
+        android:id="@+id/btnCN3"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="388dp"
+        android:text="Chức năng 3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
