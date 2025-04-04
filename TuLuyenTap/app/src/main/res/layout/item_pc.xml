@@ -6,30 +6,29 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageViewland"
+        android:id="@+id/imgPC"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="2dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        app:srcCompat="@drawable/avt" />
 
     <TextView
-        android:id="@+id/textViewCation"
+        android:id="@+id/textviewCaption"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginTop="2dp"
         android:text="TextView"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewland" />
+        app:layout_constraintTop_toBottomOf="@+id/imgPC" />
 </androidx.constraintlayout.widget.ConstraintLayout>

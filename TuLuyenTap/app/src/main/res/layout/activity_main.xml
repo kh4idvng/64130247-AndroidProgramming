@@ -11,46 +11,44 @@
         android:id="@+id/btnCau1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
+        android:layout_marginStart="92dp"
         android:layout_marginTop="136dp"
-        android:text="Câu 1"
         android:backgroundTint="#5786E9"
+        android:text="Câu 1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnCau2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="136dp"
-        android:backgroundTint="#5786E9"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
 
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="96dp"
+        android:backgroundTint="#5786E9"
         android:text="Câu 2"
-        app:layout_constraintStart_toEndOf="@+id/btnCau1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnCau3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#5786E9"
-        android:layout_marginTop="33dp"
         android:text="Câu 3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCau1" />
 
     <Button
         android:id="@+id/btnCau4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="100dp"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="96dp"
         android:backgroundTint="#5786E9"
         android:text="Câu 4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
-        app:layout_constraintStart_toEndOf="@+id/btnCau3"
-        app:layout_constraintTop_toBottomOf="@+id/btnCau2" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

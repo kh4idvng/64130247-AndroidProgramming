@@ -47,5 +47,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(Activity2);
             }
         });
+        nut3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Activity3 = new Intent(MainActivity.this, activityCau3.class);
+                startActivity(Activity3);
+            }
+        });
+        nut4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Activity4 = new Intent(MainActivity.this, activityCau4.class);
+                startActivity(Activity4);
+            }
+        });
     }
 }

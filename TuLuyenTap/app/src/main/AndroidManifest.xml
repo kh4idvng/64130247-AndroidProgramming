@@ -13,6 +13,12 @@
         android:theme="@style/Theme.TuLuyenTap"
         tools:targetApi="31">
         <activity
+            android:name=".activityCau3"
+            android:exported="false" />
+        <activity
+            android:name=".activityCau4"
+            android:exported="false" />
+        <activity
             android:name=".activityCau2"
             android:exported="false" />
         <activity
