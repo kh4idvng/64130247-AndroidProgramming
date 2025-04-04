@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
     Button nut4;
     Button nutAM;
     void TimDieuKhien(){
-        Button nut2 = findViewById(R.id.btnCN2);
-        Button nut3 = findViewById(R.id.btnCN3);
-        Button nut4 = findViewById(R.id.btnCN4);
-        Button nutAM = findViewById(R.id.btnAM);
+        nut2 = findViewById(R.id.btnCN2);
+        nut3 = findViewById(R.id.btnCN3);
+        nut4 = findViewById(R.id.btnCN4);
+        nutAM = findViewById(R.id.btnAM);
     }
 
     @Override
@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         nut2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cn2 = new Intent(MainActivity.this, ChucNang2.class);
-                startActivity(cn2);
+                Intent CN2 = new Intent(MainActivity.this, ChucNang2.class);
+                startActivity(CN2);
             }
         });
     }
