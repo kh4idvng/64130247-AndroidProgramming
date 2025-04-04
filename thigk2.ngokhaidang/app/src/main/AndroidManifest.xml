@@ -13,6 +13,9 @@
         android:theme="@style/Theme._64130247_ThiGiuaKy_NgoKhaiDang"
         tools:targetApi="31">
         <activity
+            android:name=".TTCaNhan"
+            android:exported="false" />
+        <activity
             android:name=".ChucNang3"
             android:exported="false" />
         <activity
