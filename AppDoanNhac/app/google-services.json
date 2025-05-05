@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "254487542659",
+    "project_id": "appdoannhac1",
+    "storage_bucket": "appdoannhac1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254487542659:android:59f3e15ebde2af9ece94b6",
+        "android_client_info": {
+          "package_name": "ntu.ngokhaidang.appdoannhac"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo5Yshv8aenYZ3Mj_rzpAlmTEW5bjLEyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
