@@ -24,30 +24,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Quiz extends AppCompatActivity {
+
+    // Khai báo biến giao diện
     Button nutNhac, dapAn1, dapAn2, dapAn3, dapAn4;
     ImageView animeImage;
+    TextView soCau, timerText;
+
+    // Biến điều khiển logic
     MediaPlayer mediaPlayer;
-    boolean isPlaying = false;
-    TextView soCau;
+    CountDownTimer countDownTimer;
     DatabaseReference databaseReference;
     List<Question> questionList = new ArrayList<>();
-    int currentQuestionIndex = 0;
-    CountDownTimer countDownTimer;
-    int score = 0;
-    final long totalTime = 15000; // 15 giây
-    long timeLeftInMillis = totalTime;
-
     Question currentQuestion;
+
+    // Biến trạng thái
+    int currentQuestionIndex = 0;
+    int score = 0;
+    boolean isPlaying = false;
     boolean hasAnswered = false;
 
-    TextView timerText;
+    // Thời gian cho mỗi câu hỏi (15 giây)
+    final long totalTime = 15000;
+    long timeLeftInMillis = totalTime;
 
-    @SuppressLint("MissingInflatedId")
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
-
+    // tìm điều khiển
+    private void TimDieuKhien() {
         animeImage = findViewById(R.id.animeImage);
         nutNhac = findViewById(R.id.nutChoiNhac);
         dapAn1 = findViewById(R.id.nutDA);
@@ -56,9 +57,18 @@ public class Quiz extends AppCompatActivity {
         dapAn4 = findViewById(R.id.nutDA3);
         timerText = findViewById(R.id.timerText);
         soCau = findViewById(R.id.soCau);
+    }
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_quiz);
+
+        // Tìm điều khiển
+        TimDieuKhien();
+
+        // Kết nối Firebase và lấy dữ liệu câu hỏi
         databaseReference = FirebaseDatabase.getInstance().getReference("questions");
-
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
@@ -66,6 +76,8 @@ public class Quiz extends AppCompatActivity {
                     Question question = dataSnapshot.getValue(Question.class);
                     questionList.add(question);
                 }
+
+                // Hiển thị câu hỏi đầu tiên nếu danh sách không rỗng
                 if (!questionList.isEmpty()) {
                     showQuestion(currentQuestionIndex);
                 }
@@ -77,6 +89,7 @@ public class Quiz extends AppCompatActivity {
             }
         });
 
+        // Xử lý nút Play/Pause nhạc
         nutNhac.setOnClickListener(v -> {
             if (isPlaying) {
                 if (mediaPlayer != null) mediaPlayer.pause();
@@ -90,8 +103,11 @@ public class Quiz extends AppCompatActivity {
         });
     }
 
+
+    // Hiển thị câu hỏi tại chỉ số index
     private void showQuestion(int index) {
         if (index >= questionList.size()) {
+            // Khi hết câu hỏi, chuyển sang màn hình kết quả
             Intent intent = new Intent(Quiz.this, Result.class);
             intent.putExtra("score", score);
             intent.putExtra("total", questionList.size());
@@ -103,7 +119,7 @@ public class Quiz extends AppCompatActivity {
         currentQuestion = questionList.get(index);
         hasAnswered = false;
 
-        // reset nut play va thoi gian
+        // Dừng nhạc và đếm giờ cũ nếu có
         if (mediaPlayer != null) {
             mediaPlayer.stop();
             mediaPlayer.release();
@@ -115,32 +131,36 @@ public class Quiz extends AppCompatActivity {
         if (countDownTimer != null) {
             countDownTimer.cancel();
         }
+
         timeLeftInMillis = totalTime;
         timerText.setText("15");
 
+        // Hiển thị các đáp án
         dapAn1.setText(currentQuestion.getOption1());
         dapAn2.setText(currentQuestion.getOption2());
         dapAn3.setText(currentQuestion.getOption3());
         dapAn4.setText(currentQuestion.getOption4());
 
+        // Reset giao diện nút và hiển thị số câu
         resetAnswerButtons();
         soCau.setText("Câu " + (index + 1));
 
+        // Hiển thị hình mặc định khi chưa chọn đáp án
         animeImage.setVisibility(View.VISIBLE);
         animeImage.setImageResource(R.drawable.bd);
 
-        if (mediaPlayer != null) {
-            mediaPlayer.release();
-        }
+        // Chuẩn bị nhạc câu hỏi
         int musicResId = getResources().getIdentifier(currentQuestion.getMusicName(), "raw", getPackageName());
         mediaPlayer = MediaPlayer.create(this, musicResId);
 
+        // Gán sự kiện chọn đáp án
         setAnswerListener(dapAn1, 0);
         setAnswerListener(dapAn2, 1);
         setAnswerListener(dapAn3, 2);
         setAnswerListener(dapAn4, 3);
     }
 
+    // Gán sự kiện khi người dùng chọn đáp án
     private void setAnswerListener(Button button, int selectedIndex) {
         button.setOnClickListener(v -> {
             if (hasAnswered) return;
@@ -159,47 +179,39 @@ public class Quiz extends AppCompatActivity {
             }
 
             showAnimeImage();
-
             disableAllAnswerButtons();
 
+            // Tự động chuyển sang câu kế tiếp sau 1 giây
             nutNhac.postDelayed(() -> {
                 currentQuestionIndex++;
                 showQuestion(currentQuestionIndex);
-            }, 2000);
+            }, 1000);
         });
     }
 
+    // Tô màu xanh cho đáp án đúng
     private void highlightCorrectAnswer(int correctIndex) {
-        switch (correctIndex) {
-            case 0:
-                dapAn1.setBackgroundColor(Color.GREEN);
-                break;
-            case 1:
-                dapAn2.setBackgroundColor(Color.GREEN);
-                break;
-            case 2:
-                dapAn3.setBackgroundColor(Color.GREEN);
-                break;
-            case 3:
-                dapAn4.setBackgroundColor(Color.GREEN);
-                break;
-        }
+        Button[] buttons = {dapAn1, dapAn2, dapAn3, dapAn4};
+        buttons[correctIndex].setBackgroundColor(Color.GREEN);
     }
 
+    // Hiển thị hình ảnh của bộ hoạt hình đúng khi trả lời
     private void showAnimeImage() {
         int imageResId = getResources().getIdentifier(currentQuestion.getImageName(), "drawable", getPackageName());
         animeImage.setImageResource(imageResId);
         animeImage.setVisibility(View.VISIBLE);
     }
 
+    // Reset màu sắc và trạng thái các nút đáp án
     private void resetAnswerButtons() {
         Button[] buttons = {dapAn1, dapAn2, dapAn3, dapAn4};
         for (Button b : buttons) {
-            b.setBackgroundColor(Color.parseColor("#ffffff"));
+            b.setBackgroundColor(Color.WHITE);
             b.setEnabled(true);
         }
     }
 
+    // Bắt đầu đếm ngược thời gian cho mỗi câu hỏi
     private void startTimer() {
         timeLeftInMillis = totalTime;
 
@@ -225,21 +237,23 @@ public class Quiz extends AppCompatActivity {
 
                 Toast.makeText(Quiz.this, "Hết giờ!", Toast.LENGTH_SHORT).show();
 
+                // Tự chuyển câu sau 1 giây
                 nutNhac.postDelayed(() -> {
                     currentQuestionIndex++;
                     showQuestion(currentQuestionIndex);
-                }, 2000);
+                }, 1000);
             }
         }.start();
     }
 
+    // Vô hiệu hóa toàn bộ nút đáp án
     private void disableAllAnswerButtons() {
         dapAn1.setEnabled(false);
         dapAn2.setEnabled(false);
         dapAn3.setEnabled(false);
         dapAn4.setEnabled(false);
     }
-
+    // Giải phóng tài nguyên khi thoát Activity
     @Override
     protected void onDestroy() {
         super.onDestroy();

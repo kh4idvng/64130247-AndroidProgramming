@@ -2,6 +2,7 @@ package ntu.ngokhaidang.appdoannhac;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -11,8 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Result extends AppCompatActivity {
-    TextView resultText;
-    Button backButton;
+    TextView tbKetQua;
+    ImageButton nutTroVe;
     int score;
     int total;
     @Override
@@ -21,8 +22,8 @@ public class Result extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_result);
 
-        resultText = findViewById(R.id.resultText);
-        backButton = findViewById(R.id.backButton);
+        tbKetQua = findViewById(R.id.ketqua);
+        nutTroVe = findViewById(R.id.btnQuit);
 
         // Lấy dữ liệu điểm và tổng số câu từ Intent
         score = getIntent().getIntExtra("score", 0);
@@ -30,9 +31,9 @@ public class Result extends AppCompatActivity {
 
         // Hiển thị số câu đúng (score / 100 vì mỗi câu đúng +100 điểm)
         int correctAnswers = score / 100;
-        resultText.setText("Bạn trả lời đúng " + correctAnswers + " / " + total + " câu!\nĐiểm của bạn: " + score);
+        tbKetQua.setText("Bạn trả lời đúng " + correctAnswers + " / " + total + " câu!\nĐiểm của bạn: " + score);
 
-        backButton.setOnClickListener(v -> {
+        nutTroVe.setOnClickListener(v -> {
             finish(); // Quay lại màn hình trước
         });
 

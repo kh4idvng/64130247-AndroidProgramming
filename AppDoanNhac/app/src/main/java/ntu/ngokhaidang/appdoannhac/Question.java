@@ -6,8 +6,8 @@ public class Question {
     private String option3;
     private String option4;
     private int correctAnswerIndex;
-    private String musicName;  // Tên file nhạc trong res/raw (không cần .mp3)
-    private String imageName;  // Tên file hình trong res/drawable (không cần .png)
+    private String musicName;  // Tên file nhạc trong res/raw
+    private String imageName;  // Tên file hình trong res/drawable
 
     // Constructor trống để Firebase tự tạo đối tượng
     public Question() {}
