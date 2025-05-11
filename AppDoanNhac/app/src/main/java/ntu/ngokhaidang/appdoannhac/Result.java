@@ -14,8 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class Result extends AppCompatActivity {
     TextView tbKetQua;
     ImageButton nutTroVe;
-    int score;
-    int total;
+    int sodiem;
+    int tongSoCau;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,15 +26,15 @@ public class Result extends AppCompatActivity {
         nutTroVe = findViewById(R.id.btnQuit);
 
         // Lấy dữ liệu điểm và tổng số câu từ Intent
-        score = getIntent().getIntExtra("score", 0);
-        total = getIntent().getIntExtra("total", 0);
+        sodiem = getIntent().getIntExtra("score", 0);
+        tongSoCau = getIntent().getIntExtra("total", 0);
 
         // Hiển thị số câu đúng (score / 100 vì mỗi câu đúng +100 điểm)
-        int correctAnswers = score / 100;
-        tbKetQua.setText("Bạn trả lời đúng " + correctAnswers + " / " + total + " câu!\nĐiểm của bạn: " + score);
+        int cauTLDung = sodiem / 100;
+        tbKetQua.setText("Bạn trả lời đúng " + cauTLDung + " / " + tongSoCau + " câu!\nĐiểm của bạn: " + sodiem);
 
         nutTroVe.setOnClickListener(v -> {
-            finish(); // Quay lại màn hình trước
+            finish(); // Quay lại màn hình chính
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

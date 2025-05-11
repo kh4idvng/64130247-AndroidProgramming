@@ -27,29 +27,29 @@ public class Quiz extends AppCompatActivity {
 
     // Khai báo biến giao diện
     Button nutNhac, dapAn1, dapAn2, dapAn3, dapAn4;
-    ImageView animeImage;
+    ImageView anhHH;
     TextView soCau, timerText;
 
     // Biến điều khiển logic
     MediaPlayer mediaPlayer;
-    CountDownTimer countDownTimer;
+    CountDownTimer demNguocTG;
     DatabaseReference databaseReference;
-    List<Question> questionList = new ArrayList<>();
+    List<Question> dsCauHoi = new ArrayList<>();
     Question currentQuestion;
 
     // Biến trạng thái
-    int currentQuestionIndex = 0;
-    int score = 0;
+    int soCauHienTai = 0;
+    int diemso = 0;
     boolean isPlaying = false;
     boolean hasAnswered = false;
 
     // Thời gian cho mỗi câu hỏi (15 giây)
-    final long totalTime = 15000;
-    long timeLeftInMillis = totalTime;
+    final long tongTG = 15000;
+    long tgConLai = tongTG;
 
     // tìm điều khiển
     private void TimDieuKhien() {
-        animeImage = findViewById(R.id.animeImage);
+        anhHH = findViewById(R.id.animeImage);
         nutNhac = findViewById(R.id.nutChoiNhac);
         dapAn1 = findViewById(R.id.nutDA);
         dapAn2 = findViewById(R.id.nutDA1);
@@ -74,12 +74,12 @@ public class Quiz extends AppCompatActivity {
             public void onDataChange(DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     Question question = dataSnapshot.getValue(Question.class);
-                    questionList.add(question);
+                    dsCauHoi.add(question);
                 }
 
                 // Hiển thị câu hỏi đầu tiên nếu danh sách không rỗng
-                if (!questionList.isEmpty()) {
-                    showQuestion(currentQuestionIndex);
+                if (!dsCauHoi.isEmpty()) {
+                    showQuestion(soCauHienTai);
                 }
             }
 
@@ -106,17 +106,17 @@ public class Quiz extends AppCompatActivity {
 
     // Hiển thị câu hỏi tại chỉ số index
     private void showQuestion(int index) {
-        if (index >= questionList.size()) {
+        if (index >= dsCauHoi.size()) {
             // Khi hết câu hỏi, chuyển sang màn hình kết quả
             Intent intent = new Intent(Quiz.this, Result.class);
-            intent.putExtra("score", score);
-            intent.putExtra("total", questionList.size());
+            intent.putExtra("score", diemso);
+            intent.putExtra("total", dsCauHoi.size());
             startActivity(intent);
             finish();
             return;
         }
 
-        currentQuestion = questionList.get(index);
+        currentQuestion = dsCauHoi.get(index);
         hasAnswered = false;
 
         // Dừng nhạc và đếm giờ cũ nếu có
@@ -128,11 +128,11 @@ public class Quiz extends AppCompatActivity {
         isPlaying = false;
         nutNhac.setText("Play");
 
-        if (countDownTimer != null) {
-            countDownTimer.cancel();
+        if (demNguocTG != null) {
+            demNguocTG.cancel();
         }
 
-        timeLeftInMillis = totalTime;
+        tgConLai = tongTG;
         timerText.setText("15");
 
         // Hiển thị các đáp án
@@ -146,8 +146,8 @@ public class Quiz extends AppCompatActivity {
         soCau.setText("Câu " + (index + 1));
 
         // Hiển thị hình mặc định khi chưa chọn đáp án
-        animeImage.setVisibility(View.VISIBLE);
-        animeImage.setImageResource(R.drawable.bd);
+        anhHH.setVisibility(View.VISIBLE);
+        anhHH.setImageResource(R.drawable.bd);
 
         // Chuẩn bị nhạc câu hỏi
         int musicResId = getResources().getIdentifier(currentQuestion.getMusicName(), "raw", getPackageName());
@@ -166,13 +166,13 @@ public class Quiz extends AppCompatActivity {
             if (hasAnswered) return;
             hasAnswered = true;
 
-            countDownTimer.cancel();
+            demNguocTG.cancel();
 
             int correctIndex = currentQuestion.getCorrectAnswerIndex();
 
             if (selectedIndex == correctIndex) {
                 button.setBackgroundColor(Color.GREEN);
-                score += 100;
+                diemso += 100;
             } else {
                 button.setBackgroundColor(Color.RED);
                 highlightCorrectAnswer(correctIndex);
@@ -183,8 +183,8 @@ public class Quiz extends AppCompatActivity {
 
             // Tự động chuyển sang câu kế tiếp sau 1 giây
             nutNhac.postDelayed(() -> {
-                currentQuestionIndex++;
-                showQuestion(currentQuestionIndex);
+                soCauHienTai++;
+                showQuestion(soCauHienTai);
             }, 1000);
         });
     }
@@ -198,8 +198,8 @@ public class Quiz extends AppCompatActivity {
     // Hiển thị hình ảnh của bộ hoạt hình đúng khi trả lời
     private void showAnimeImage() {
         int imageResId = getResources().getIdentifier(currentQuestion.getImageName(), "drawable", getPackageName());
-        animeImage.setImageResource(imageResId);
-        animeImage.setVisibility(View.VISIBLE);
+        anhHH.setImageResource(imageResId);
+        anhHH.setVisibility(View.VISIBLE);
     }
 
     // Reset màu sắc và trạng thái các nút đáp án
@@ -213,16 +213,16 @@ public class Quiz extends AppCompatActivity {
 
     // Bắt đầu đếm ngược thời gian cho mỗi câu hỏi
     private void startTimer() {
-        timeLeftInMillis = totalTime;
+        tgConLai = tongTG;
 
-        if (countDownTimer != null) {
-            countDownTimer.cancel();
+        if (demNguocTG != null) {
+            demNguocTG.cancel();
         }
 
-        countDownTimer = new CountDownTimer(totalTime, 1000) {
+        demNguocTG = new CountDownTimer(tongTG, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
-                timeLeftInMillis = millisUntilFinished;
+                tgConLai = millisUntilFinished;
                 timerText.setText(String.valueOf(millisUntilFinished / 1000));
             }
 
@@ -239,8 +239,8 @@ public class Quiz extends AppCompatActivity {
 
                 // Tự chuyển câu sau 1 giây
                 nutNhac.postDelayed(() -> {
-                    currentQuestionIndex++;
-                    showQuestion(currentQuestionIndex);
+                    soCauHienTai++;
+                    showQuestion(soCauHienTai);
                 }, 1000);
             }
         }.start();
@@ -261,8 +261,8 @@ public class Quiz extends AppCompatActivity {
             mediaPlayer.release();
             mediaPlayer = null;
         }
-        if (countDownTimer != null) {
-            countDownTimer.cancel();
+        if (demNguocTG != null) {
+            demNguocTG.cancel();
         }
     }
 }

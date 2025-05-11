@@ -26,9 +26,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
         //tìm điều khiển
         CDImg = findViewById(R.id.imgCD);
         nutBatDau = findViewById(R.id.btnStart);
+
         ObjectAnimator rotateAnimator = ObjectAnimator.ofFloat(CDImg, "rotation", 0f, 360f);
         rotateAnimator.setDuration(10000); // Thời gian xoay 1 vòng (10 giây)
         rotateAnimator.setInterpolator(new LinearInterpolator()); // Xoay đều
