@@ -4,35 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="@drawable/background"
     android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imgCD"
-        android:layout_width="237dp"
-        android:layout_height="226dp"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="78dp"
+        android:layout_width="276dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="44dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cdchinh" />
 
     <ImageButton
         android:id="@+id/btnStart"
-        android:layout_width="175dp"
-        android:layout_height="58dp"
+        android:layout_width="168dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="464dp"
         android:background="@null"
         android:scaleType="fitXY"
         android:soundEffectsEnabled="false"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663"
         app:srcCompat="@drawable/nut_start" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
