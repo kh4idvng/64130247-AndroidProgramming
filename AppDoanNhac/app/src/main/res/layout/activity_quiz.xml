@@ -10,6 +10,14 @@
     tools:context=".Quiz">
 
 
+    <WebView
+        android:id="@+id/gif4"
+        android:layout_width="72dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="292dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/animeImage"
         android:layout_width="169dp"
@@ -113,7 +121,8 @@
         android:backgroundTint="#96AFA6"
         android:elevation="8dp"
         android:fontFamily="@font/fontswiss"
-        android:text="Play"
+        android:text="Chơi"
+        android:textColor="@color/black"
         android:textSize="17dp"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -153,11 +162,34 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:fontFamily="@font/fontswiss"
-        android:text="TextView"
         android:textColor="#3EFF60"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/gif1"
+        android:layout_width="72dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/gif2"
+        android:layout_width="72dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="108dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/gif3"
+        android:layout_width="72dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="196dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

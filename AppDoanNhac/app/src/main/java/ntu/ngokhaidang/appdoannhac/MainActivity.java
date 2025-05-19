@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     ImageView CDImg;
     ImageButton nutBatDau;
 
+    MediaPlayer nhacnen;
+    MediaPlayer amthanhnutbatdau;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,14 +41,24 @@ public class MainActivity extends AppCompatActivity {
         rotateAnimator.start();
 
         // thêm âm thanh cho nút Start
-        final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.nutbatdau);
+        amthanhnutbatdau = MediaPlayer.create(this, R.raw.nutbatdau);
+
+        // nhac nen
+        nhacnen = MediaPlayer.create(this, R.raw.nhacnen);
+        nhacnen.setLooping(true);
+        nhacnen.start();
+
         // bắt sự kiện nút Start
         nutBatDau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Dừng và giải phóng nhạc nền khi chuyển sang Quiz
+                if (nhacnen != null && nhacnen.isPlaying()) {
+                    nhacnen.pause();
+                }
                 Intent Choi = new Intent(MainActivity.this, Quiz.class);
                 startActivity(Choi);
-                mediaPlayer.start();
+                amthanhnutbatdau.start();
             }
         });
 
@@ -54,5 +67,21 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (nhacnen != null && !nhacnen.isPlaying()) {
+            nhacnen.start();
+        }
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (nhacnen != null) {
+            nhacnen.release();
+            nhacnen.stop();
+            nhacnen = null;
+        }
     }
 }
