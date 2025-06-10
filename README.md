@@ -8,9 +8,9 @@
 ## 📘 Danh sách bài tập
 
 ### 🧠 [KidLearningApp](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/KidLearningApp)
-> Ứng dụng học tập cho trẻ em với các chủ đề như Toán, Khoa học, Âm nhạc, và Vẽ.
+> Giao diện ứng dụng học tập cho trẻ em với các chủ đề như Toán, Khoa học, Âm nhạc, và Vẽ.
 
-| Giao diện chính | Giao diện danh mục |
+| Giao diện 1 | Giao diện 2 |
 |-----------------|--------------------|
 | ![image](https://github.com/user-attachments/assets/a807d2bd-8635-46bf-a507-ba046512e472) | ![image](https://github.com/user-attachments/assets/7bc9ba5d-d522-4ef5-8bf8-92f0c1f380e3) |
 
