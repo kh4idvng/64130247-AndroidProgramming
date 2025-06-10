@@ -22,7 +22,7 @@
 > Bao gồm adapter, layout item và setup dữ liệu trong `Activity`.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/122aa222-d838-4c4a-a937-c973c5ccc370" alt="Recycler View Screenshot" width="500"/>
+  <img src="https://github.com/user-attachments/assets/122aa222-d838-4c4a-a937-c973c5ccc370" alt="Recycler View Screenshot" width="300"/>
 </p>
 
 ---
