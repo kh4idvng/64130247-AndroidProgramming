@@ -17,6 +17,14 @@
 
 ---
 
+### 🔐 [Màn Hình Đăng Nhập](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/LoginScreen)
+> Giao diện đăng nhập cơ bản sử dụng `EditText`, `Button` và xử lý sự kiện đăng nhập.  
+> Có thể mở rộng để kiểm tra thông tin tài khoản từ cơ sở dữ liệu.
+
+<img src="https://github.com/user-attachments/assets/2a119b4a-be16-4567-83b6-a8ab6dcaab65" alt="Login Screen" width="500"/>
+
+---
+
 ### 🧩 [Ví dụ Fragment Replace](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/FragmentEx_Replace)
 > Ví dụ minh họa cách sử dụng `Fragment` và thao tác `replace` fragment trong Android.  
 
