@@ -17,6 +17,19 @@
 
 ---
 
+### 🧩 [Ví dụ Fragment Replace](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/FragmentEx_Replace)
+> Ví dụ minh họa cách sử dụng `Fragment` và thao tác thay thế (`replace`) fragment trong Android.  
+> Giúp hiểu rõ vòng đời Fragment, giao tiếp giữa Activity và Fragment.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3375c6e1-58e2-4a8c-9dfa-3feff189c526" width="300"/>
+  <img src="https://github.com/user-attachments/assets/4271bdf6-8c50-4f60-a482-e7131cef2c8d" width="300"/>
+  <img src="https://github.com/user-attachments/assets/6deff9be-21ac-4b8b-816d-01b18057feb1" width="300"/>
+  <img src="https://github.com/user-attachments/assets/a8f47ea7-c218-4c5f-8e92-9e53c5df5daf" width="300"/>
+</p>
+
+--- 
+
 ### 🔄 [Recycler View](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/UsingRecyclerView)
 > Ví dụ sử dụng `RecyclerView` để hiển thị danh sách item.  
 
