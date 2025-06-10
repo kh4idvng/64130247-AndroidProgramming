@@ -7,7 +7,12 @@
 
 ## 📘 Danh sách bài tập
 
+<div align="center">
+
 ### 🎧 [App Nghe Nhạc Đoán Tên Hoạt Hình](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/AppDoanNhac)
+
+</div>
+
 > Ứng dụng giải trí giúp người dùng vừa nghe nhạc, vừa đoán tên các bộ phim hoạt hình/anime yêu thích.  
 > Sử dụng: `MediaPlayer`, `Firebase Realtime Database`, `CountDownTimer`.
 
@@ -17,7 +22,12 @@
 
 ---
 
+<div align="center">
+
 ### 🔐 [Màn Hình Đăng Nhập](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/LoginScreen)
+
+</div>
+
 > Giao diện đăng nhập cơ bản sử dụng.
 
 <p align="center">
@@ -26,7 +36,12 @@
 
 ---
 
+<div align="center">
+
 ### 🧩 [Ví dụ Fragment Replace](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/FragmentEx_Replace)
+
+</div>
+
 > Ví dụ minh họa cách sử dụng `Fragment` và thao tác `replace` fragment trong Android.  
 
 | Màn hình 1 | Màn hình 2 | Màn hình 3 | Màn hình 4 |
@@ -35,7 +50,12 @@
 
 ---
 
+<div align="center">
+
 ### 🔄 [Recycler View](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/UsingRecyclerView)
+
+</div>
+
 > Ví dụ sử dụng `RecyclerView` để hiển thị danh sách item.  
 
 <p align="center">
@@ -44,7 +64,12 @@
 
 ---
 
+<div align="center">
+
 ### 🧠 [KidLearningApp](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/KidLearningApp)
+
+</div>
+
 > Giao diện ứng dụng học tập cho trẻ em với các chủ đề như Toán, Khoa học, Âm nhạc, và Vẽ.
 
 | Giao diện 1 | Giao diện 2 |
@@ -53,7 +78,12 @@
 
 ---
 
+<div align="center">
+
 ### 🎲 [CheckSoRandom](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/CheckSoRandom)
+
+</div>
+
 > Ứng dụng kiểm tra số ngẫu nhiên.
 
 <p align="center">
@@ -62,50 +92,91 @@
 
 ---
 
+<div align="center">
+
 ### 📐 [Ex1 - ConstraintLayout](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex1_ConstrainLayout)
 
-![image](https://github.com/user-attachments/assets/6fda2381-feee-4044-8d2b-30184e3cd2f6)
+</div>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6fda2381-feee-4044-8d2b-30184e3cd2f6" />
+</p>
 
 ---
+
+<div align="center">
 
 ### 📏 [Ex2 - LinearLayout](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex2_LinearLayout)
 
-![image](https://github.com/user-attachments/assets/06d39545-70b7-49a7-b1ad-c5324498090e)
+</div>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/06d39545-70b7-49a7-b1ad-c5324498090e" />
+</p>
 
 ---
+
+<div align="center">
 
 ### ➕ [Ex3 - SimpleSumApp](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex3_SimpleSumApp)
 
-![image](https://github.com/user-attachments/assets/be31d160-14b1-4507-8e4a-7fffebdc0439)
+</div>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/be31d160-14b1-4507-8e4a-7fffebdc0439" />
+</p>
 
 ---
+
+<div align="center">
 
 ### ➕➖✖️➗ [Ex4 - Add/Sub/Mul/Div (OnClick)](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex4_AddSubMulDiv_Onclick)
 
-![image](https://github.com/user-attachments/assets/a50de741-fe0c-463f-a381-24745dd3ba9c)
+</div>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a50de741-fe0c-463f-a381-24745dd3ba9c" />
+</p>
 
 ---
+
+<div align="center">
 
 ### 🧠 [Ex5 - Add/Sub/Mul/Div (Anonymous)](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex5_AddSubMulDiv_Anynomous)
 
-![image](https://github.com/user-attachments/assets/5ad13147-ef9b-4118-b77b-7e76ab5d4814)
+</div>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5ad13147-ef9b-4118-b77b-7e76ab5d4814" />
+</p>
 
 ---
+
+<div align="center">
 
 ### 💡 [Ex5 - Add/Sub/Mul/Div (Var)](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex5_AddSubMulDiv_Var)
 
-![image](https://github.com/user-attachments/assets/24d91010-abfd-4275-b0bc-0eff37c8b48e)
+</div>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/24d91010-abfd-4275-b0bc-0eff37c8b48e" />
+</p>
 
 ---
 
+<div align="center">
+
 ### 🔄 [Ex6 - Intent Đơn Giản](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex6_IntentDonGian)
+
+</div>
+
+> Ví dụ chuyển dữ liệu qua các `Activity` sử dụng `Intent`.
 
 | Màn hình 1 | Màn hình 2 | Màn hình 3 |
 |------------|------------|------------|
 | ![image](https://github.com/user-attachments/assets/3cd12abb-6f30-4ed9-8fb4-f725a4323203) | ![image](https://github.com/user-attachments/assets/458ca8d6-14c7-432d-a62f-c58d50bcae97) | ![image](https://github.com/user-attachments/assets/9d1b1a3e-7dd6-40e2-b616-563e4cc244ce) |
 
 ---
-
 
 ## 📌 Ghi chú
 
