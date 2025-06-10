@@ -7,6 +7,16 @@
 
 ## 📘 Danh sách bài tập
 
+### 🎧 [App Nghe Nhạc Đoán Tên Hoạt Hình](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/AppDoanNhac)
+> Ứng dụng giải trí giúp người dùng vừa nghe nhạc, vừa đoán tên các bộ phim hoạt hình/anime yêu thích.  
+> Sử dụng: `MediaPlayer`, `Firebase Realtime Database`, `CountDownTimer`.
+
+| Giao diện chính | Câu hỏi với nhạc nền | Màn hình kết quả |
+|-----------------|----------------------|-------------------|
+| ![image](https://github.com/user-attachments/assets/c42e5993-bb83-4eee-b50a-c40b039960b2) | ![image](https://github.com/user-attachments/assets/581ae463-c1e2-404c-843b-a40df59d2014) | ![image](https://github.com/user-attachments/assets/d9121ffc-de56-4402-97ce-b089531d05ad) |
+
+---
+
 ### 🧠 [KidLearningApp](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/KidLearningApp)
 > Giao diện ứng dụng học tập cho trẻ em với các chủ đề như Toán, Khoa học, Âm nhạc, và Vẽ.
 
