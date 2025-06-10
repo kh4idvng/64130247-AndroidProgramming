@@ -1,7 +1,7 @@
-# 📱 64130247 - Android Programming
+<h1 align="center">📱 64130247 - Android Programming</h1>
 
-> **Lưu trữ các bài tập lớn và nhỏ trong quá trình học lập trình Android**  
-> *Mã sinh viên: 64130247 - Khóa học Lập trình Android*
+<p align="center"><em>Lưu trữ các bài tập lớn và nhỏ trong quá trình học lập trình Android</em></p>
+<p align="center">📘 <strong>Mã sinh viên: 64130247 - Khóa học Lập trình Android</strong></p>
 
 ---
 
@@ -12,14 +12,13 @@
 > Sử dụng: `MediaPlayer`, `Firebase Realtime Database`, `CountDownTimer`.
 
 | Màn hình chính | Câu hỏi với nhạc | Màn hình kết quả |
-|-----------------|----------------------|-------------------|
+|----------------|------------------|-------------------|
 | ![image](https://github.com/user-attachments/assets/c42e5993-bb83-4eee-b50a-c40b039960b2) | ![image](https://github.com/user-attachments/assets/581ae463-c1e2-404c-843b-a40df59d2014) | ![image](https://github.com/user-attachments/assets/d9121ffc-de56-4402-97ce-b089531d05ad) |
 
 ---
 
 ### 🔐 [Màn Hình Đăng Nhập](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/LoginScreen)
-> Giao diện đăng nhập cơ bản sử dụng `EditText`, `Button` và xử lý sự kiện đăng nhập.  
-> Có thể mở rộng để kiểm tra thông tin tài khoản từ cơ sở dữ liệu.
+> Giao diện đăng nhập cơ bản sử dụng.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2a119b4a-be16-4567-83b6-a8ab6dcaab65" alt="Login Screen" width="300"/>
@@ -34,7 +33,7 @@
 |------------|------------|------------|------------|
 | ![image](https://github.com/user-attachments/assets/3375c6e1-58e2-4a8c-9dfa-3feff189c526) | ![image](https://github.com/user-attachments/assets/4271bdf6-8c50-4f60-a482-e7131cef2c8d) | ![image](https://github.com/user-attachments/assets/6deff9be-21ac-4b8b-816d-01b18057feb1) | ![image](https://github.com/user-attachments/assets/a8f47ea7-c218-4c5f-8e92-9e53c5df5daf) |
 
---- 
+---
 
 ### 🔄 [Recycler View](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/UsingRecyclerView)
 > Ví dụ sử dụng `RecyclerView` để hiển thị danh sách item.  
@@ -49,7 +48,7 @@
 > Giao diện ứng dụng học tập cho trẻ em với các chủ đề như Toán, Khoa học, Âm nhạc, và Vẽ.
 
 | Giao diện 1 | Giao diện 2 |
-|-----------------|--------------------|
+|------------|-------------|
 | ![image](https://github.com/user-attachments/assets/a807d2bd-8635-46bf-a507-ba046512e472) | ![image](https://github.com/user-attachments/assets/7bc9ba5d-d522-4ef5-8bf8-92f0c1f380e3) |
 
 ---
@@ -57,7 +56,9 @@
 ### 🎲 [CheckSoRandom](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/CheckSoRandom)
 > Ứng dụng kiểm tra số ngẫu nhiên.
 
-![image](https://github.com/user-attachments/assets/4c2bf2bb-849d-4c8b-8f24-eb8dfaec2878)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4c2bf2bb-849d-4c8b-8f24-eb8dfaec2878" alt="CheckSoRandom" width="300"/>
+</p>
 
 ---
 
@@ -100,10 +101,11 @@
 ### 🔄 [Ex6 - Intent Đơn Giản](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex6_IntentDonGian)
 
 | Màn hình 1 | Màn hình 2 | Màn hình 3 |
-|------------|------------|----------------|
+|------------|------------|------------|
 | ![image](https://github.com/user-attachments/assets/3cd12abb-6f30-4ed9-8fb4-f725a4323203) | ![image](https://github.com/user-attachments/assets/458ca8d6-14c7-432d-a62f-c58d50bcae97) | ![image](https://github.com/user-attachments/assets/9d1b1a3e-7dd6-40e2-b616-563e4cc244ce) |
 
 ---
+
 
 ## 📌 Ghi chú
 
