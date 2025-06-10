@@ -19,7 +19,6 @@
 
 ### 🧩 [Ví dụ Fragment Replace](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/FragmentEx_Replace)
 > Ví dụ minh họa cách sử dụng `Fragment` và thao tác `replace` fragment trong Android.  
-> Giúp hiểu rõ cách hoạt động và giao tiếp giữa Fragment với Activity.
 
 | Màn hình 1 | Màn hình 2 | Màn hình 3 | Màn hình 4 |
 |------------|------------|------------|------------|
