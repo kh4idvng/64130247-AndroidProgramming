@@ -61,7 +61,7 @@
 
 ### 🔄 [Ex6 - Intent Đơn Giản](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/Ex6_IntentDonGian)
 
-| Màn hình 1 | Màn hình 2 | Truyền dữ liệu |
+| Màn hình 1 | Màn hình 2 | Màn hình 3 |
 |------------|------------|----------------|
 | ![image](https://github.com/user-attachments/assets/3cd12abb-6f30-4ed9-8fb4-f725a4323203) | ![image](https://github.com/user-attachments/assets/458ca8d6-14c7-432d-a62f-c58d50bcae97) | ![image](https://github.com/user-attachments/assets/9d1b1a3e-7dd6-40e2-b616-563e4cc244ce) |
 
