@@ -17,6 +17,16 @@
 
 ---
 
+### 🔄 [Recycler View](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/UsingRecyclerView)
+> Ví dụ sử dụng `RecyclerView` để hiển thị danh sách item động với giao diện hiện đại, dễ tùy biến.  
+> Bao gồm adapter, layout item và setup dữ liệu trong `Activity`.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/122aa222-d838-4c4a-a937-c973c5ccc370" alt="Recycler View Screenshot" width="500"/>
+</p>
+
+---
+
 ### 🧠 [KidLearningApp](https://github.com/kh4idvng/64130247-AndroidProgramming/tree/main/KidLearningApp)
 > Giao diện ứng dụng học tập cho trẻ em với các chủ đề như Toán, Khoa học, Âm nhạc, và Vẽ.
 
