@@ -21,7 +21,9 @@
 > Giao diện đăng nhập cơ bản sử dụng `EditText`, `Button` và xử lý sự kiện đăng nhập.  
 > Có thể mở rộng để kiểm tra thông tin tài khoản từ cơ sở dữ liệu.
 
-<img src="https://github.com/user-attachments/assets/2a119b4a-be16-4567-83b6-a8ab6dcaab65" alt="Login Screen" width="500"/>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2a119b4a-be16-4567-83b6-a8ab6dcaab65" alt="Login Screen" width="300"/>
+</p>
 
 ---
 
